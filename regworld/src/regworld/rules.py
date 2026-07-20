@@ -535,6 +535,7 @@ def step_quarter(
         "fined": (fines > 0).astype(np.float64),
         "alive": alive_f,
         "revenue": revenue,
+        "segment_trust": trust,  # (S,) — the consumer survey samples this
     }
     return new_state, outcome, covariates
 
